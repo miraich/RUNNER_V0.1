@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     bool alive = true;
     private Rigidbody rg;
-    private float speed = 5;
+    private float speed = 10;
 
     private int lineToMove = 1;
     public float lineDistance = 3;
@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
         if (!alive) return;
         Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
         rg.MovePosition(rg.position + forwardMove);
+
         
     }
 

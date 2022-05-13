@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    public float TurnSpeed = 90f;
+    public float TurnSpeed = 150f;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -13,7 +13,7 @@ public class Coin : MonoBehaviour
             return;
         }
 
-        GameManager.inst.IncrementScore();
+        GameManager.inst.IncrementCoins();
 
 
 
